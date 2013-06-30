@@ -8,7 +8,7 @@ content {
 plugin.base_jobmarket {
   pages {
     header-logo =
-    header-logo {
+    header-slider {
       colpos =
     }
   }
