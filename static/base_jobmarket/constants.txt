@@ -5,6 +5,14 @@ content {
   space       = 0|0
 }
 
+plugin.base_jobmarket {
+  pages {
+    header-logo =
+    header-logo {
+      colpos =
+    }
+  }
+}
 styles {
   content {
     imgtext {

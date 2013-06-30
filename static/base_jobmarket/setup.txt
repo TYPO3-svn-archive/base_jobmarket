@@ -2,6 +2,9 @@
   // temp.tmenu
   // temp.menuMain
   // temp.head
+  // temp.header2
+  //   header-logo
+  //   header-slider
   // temp.body
 
 
@@ -123,6 +126,39 @@ temp.head {
 
   //////////////////////////////////////////////
   // 
+  // temp.header2
+
+temp.header2 {
+  header-logo = CONTENT
+  header-logo {
+    table = tt_content
+    select {
+      pidInList = {$plugin.base_jobmarket.pages.header-logo}
+      orderBy   = sorting
+      max       = 1
+      colPos    = 0
+    }
+  }
+  header-slider = COA
+  header-slider {
+    10 = LOAD_REGISTER
+    10 {
+      maxImageWidth       = 720
+    }
+    20 < styles.content.get
+    20 {
+      slide = -1
+      select.where = colpos={$plugin.base_jobmarket.pages.header-logo.colpos}
+    }
+    30 = RESTORE_REGISTER
+  }
+}
+  // temp.header2
+
+
+
+  //////////////////////////////////////////////
+  // 
   // temp.body
 
 temp.body = TEMPLATE
@@ -135,6 +171,7 @@ temp.body {
     header {
       select.pidInList = {$myConst.pages.root.libraries.header}
     }
+    header2 < temp.header2
     content < styles.content.get
     menue = COA
     menue {
@@ -251,8 +288,12 @@ page {
 
   headerData.10 < temp.head
   includeCSS {
-     styles   = {$myConst.paths.css}{$myConst.files.html.css}
-  }  
+    styles        = {$myConst.paths.css}{$myConst.files.html.css}
+    fadeSlideShow = EXT:org/res/jss/fadeSlideShow/fadeSlideShow.css
+  }
+  includeJSFooter {
+    fadeSlideShow = EXT:org/res/jss/fadeSlideShow/fadeSlideShow.js
+  }
   meta {
     author = {$myConst.client.name}
     keywords {
