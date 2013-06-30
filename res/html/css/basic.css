@@ -173,16 +173,16 @@ a:hover {
         float: right;
         height: 130px;
 /*        margin-left: -5px;*/
-        padding: 0 20px;
+        padding: 0 20px 0 69px;
         text-align:right;
-        width: 241px;
+        width: 192px;
     }
     /*#00001, 120902, dwildt+*/
     #header-slider {
         background-color: #f66800;
         height:130px;
         overflow: hidden;
-        width: 719px;
+        width: 768px;
     }
     /*#00002, 121001, dwildt+*/
 
