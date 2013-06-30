@@ -178,6 +178,7 @@ a:hover {
     }
     /*#00001, 120902, dwildt+*/
     #header-slider {
+        background-color: #f66800;
         height:130px;
         overflow: hidden;
         width: 719px;
