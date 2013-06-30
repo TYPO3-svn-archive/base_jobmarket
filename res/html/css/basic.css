@@ -127,9 +127,6 @@ a:hover {
   border-bottom:0;*/
   position: relative;
 }
-#offset-top {
-  height:55px;
-}
 /* wraps */
 
 
@@ -174,7 +171,6 @@ a:hover {
         height: 130px;
 /*        margin-left: -5px;*/
         padding: 0 20px 0 69px;
-        text-align:right;
         width: 192px;
     }
     /*#00001, 120902, dwildt+*/
