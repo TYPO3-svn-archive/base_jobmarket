@@ -290,10 +290,6 @@ page {
   headerData.10 < temp.head
   includeCSS {
     styles        = {$myConst.paths.css}{$myConst.files.html.css}
-    fadeSlideShow = EXT:org/res/jss/fadeSlideShow/fadeSlideShow.css
-  }
-  includeJSFooter {
-    fadeSlideShow = EXT:org/res/jss/fadeSlideShow/fadeSlideShow.js
   }
   meta {
     author = {$myConst.client.name}
