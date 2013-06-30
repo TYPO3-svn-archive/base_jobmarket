@@ -1,0 +1,258 @@
+/*
+  reset
+  html, body, a, h1-3, .cb
+  wraps
+  elements
+  tags
+  tx-browser-pi1
+*/
+
+
+
+/**********************************
+*
+* reset */
+
+* {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, p, ul, ol, dl {
+  margin-bottom: 1em;
+}
+ul, ol {
+  margin-left: 1.2em;
+}
+ol {
+  padding-left: 2em;
+}
+ul ul, ol ol {
+  margin-bottom: 0;
+}
+
+form, pre {
+  margin: 1em 0;
+}
+input[type="text"], input[type="password"], textarea, select {
+  background-color: #fff;
+  border: 1px solid rgb(102,102,102);
+}
+/* reset */
+
+
+/**********************************
+*
+* html, body, a, h1-3, .cb */
+
+html {
+  height: 100%;       /* For FF and Opera: background-image will centered vertically */
+  overflow-y: scroll; /* There is a scroll-bar in any case */
+}
+body {
+  background:#ff8c00;
+  background-image:url(background/typo3.gif);
+  color:#000;
+  font-family: Trebuchet MS, Geneva, Arial, Helvetica, Verdana, sans serif;
+  font-size: .85em;
+  height: 100%;
+  margin: 0 auto;
+}
+h1, h2, h3 {
+  font-size: 1em;
+}
+a {
+  font-weight:bold;
+}
+a,
+a:link,
+a:visited {
+  color:#f66800;
+  text-decoration:none;
+}
+a:active,
+a:focus,
+a:hover {
+  color:#8B0000;
+}
+.cb {
+  clear: both;
+  font-size:0px;
+}
+/* html, body, a, h1-3, .cb */
+
+
+
+/**********************************
+*
+* wraps */
+
+#wrap-horizontal {
+  background-color:white;
+  background-image:url("background/wrap-horizontal.gif");
+  background-repeat:repeat-y;
+  margin: 0 auto;
+  min-height: 100%;
+  position: relative;
+  width: 1000px;
+}
+
+#wrap-vertical {
+  border-top: 1em solid #ff8c00;
+  padding-bottom:6.4em;
+  position: relative;
+  width:1000px;
+}
+#wrap-box {
+  border: 1px solid white;
+  border-bottom:0;
+  position: relative;
+}
+#offset-top {
+  height:55px;
+}
+/* wraps */
+
+
+
+/**********************************
+*
+* elements */
+
+#header {
+  background:#f66800;
+  border-bottom:1px solid white;
+  color: white;
+  font-size: 2em;
+  height:44px;
+  padding:10px 0 0 788px;
+  position: absolute;
+  top: 0;
+  width:210px;
+}
+
+#content {
+  float:left;
+  overflow:hidden;
+  padding:9px 10px 2em 10px;
+  position:relative;
+  width:748px;
+}
+#content ul#record-browser {
+  margin: 0;
+}
+#content p.backbutton {
+  font-size: .8em;
+}
+input.ui-button {
+  font-size: .8em;
+}
+#menue {
+  background:#f66800;
+  float:right;
+  overflow:hidden;
+  width:210px;
+}
+#footer {
+  background:#ff8c00;
+  border-top:1px solid white;
+  bottom:0;
+  color: #000;
+  height:6.4em;
+  padding:1em 0 0 0;
+  position:absolute;
+  text-align:center;
+  width:1000px;
+}
+/* elements */
+
+
+
+/**********************************
+*
+* tags */
+
+h1 {
+  font-size:2em;
+  margin-bottom:.4em;
+}
+h2 {
+  font-size:1.4em;
+}
+#menue a,
+#menue a:link,
+#menue a:visited,
+#header a,
+#header a:link,
+#header a:visited,
+#footer a,
+#footer a:link,
+#footer a:visited {
+  color:white;
+  text-decoration:none;
+}
+#menue a:active,
+#menue a:focus,
+#menue a:hover,
+#header a:active,
+#header a:focus,
+#header a:hover,
+#footer a:active,
+#footer a:focus,
+#footer a:hover {
+  color:#960000;
+  text-decoration:none;
+}
+
+#menue ul,
+#menue ol {
+  color:white;
+  list-style:none;
+  margin:0;
+}
+#menue ul ul,
+#menue ol ol {
+  margin-left: 1em;
+}
+#menue ul ul ul,
+#menue ol ol ol {
+  margin-left: 2em;
+}
+#menue ul ul ul ul,
+#menue ol ol ol ol {
+  margin-left: 3em;
+}
+/* tags */
+
+
+
+
+/* tx-browser-pi1 */
+.tx-browser-pi1 a,
+.tx-browser-pi1 a:link,
+.tx-browser-pi1 a:visited {
+  color:#000;
+  text-decoration:none;
+}
+.tx-browser-pi1 a:active,
+.tx-browser-pi1 a:focus,
+.tx-browser-pi1 a:hover {
+  color:#f66800;
+}
+.tx-browser-pi1 ul.indexBrowser li.selected, .tx-browser-pi1 ul.modeSelector li.selected {
+  background:none repeat scroll 0 0 #FF8C00;
+}
+.tx-browser-pi1 .sword {
+  width:10em;
+}
+
+.searchbox fieldset, 
+.selectboxorderby fieldset {
+  border:0;
+  padding:0;
+}
+.searchbox fieldset legend, 
+.selectboxorderby fieldset legend {
+  display:none;
+}
+/* tx-browser-pi1 */

@@ -1,0 +1,42 @@
+1.3.3
+  12-03-17
+  Improvement
+  - CSS: menue levels
+  
+1.3.2
+  12-03-04
+  Imrovements
+  * #00000: a-z-browser is renamed as index browser
+            Effects
+            * CSS : azSelector -> indexBrowser
+
+1.3.1
+  11-11-29
+  Bugfix
+  * #00000: CSS bug in the menu
+
+1.3.0
+  11-08-10
+  New Feature
+  * #27041: Record browser for the single view / Prev-next Switcher in the single view
+
+1.2.1
+  10-10-21
+  Maintenance
+  - CSS: fieldset and legend display is none
+
+1.0.2
+  10-09-27
+  Maintenance
+  - CSS: input password got a border
+  - CSS: TYPO3 logo becomes background image
+  
+1.0.1
+  10-08-30
+  Publishing
+  - Adding the manual
+  
+0.0.1
+  10-08-25
+  Dirk Wildt  <http://wildt.at.die-netzmacher.de>
+    - Initial Release

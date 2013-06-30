@@ -1,0 +1,83 @@
+1. Install and activate the extensions
+
+   a. Template Auto-parser (automaketemplate)     - obligate
+   b. RealURL: speaking paths for TYPO3 (realurl) - recommended
+
+   
+2. Install and activate this extension
+
+
+3. Create backend group
+
+   a. Create a backend group which is called
+      job_market
+
+
+4. Create page tree
+  
+   |-- Job Market 
+       |-- terms & conditions
+       |-- Job Market - Jobs [sysfolder]
+       `-- libraries [sysfolder]
+           |-- header
+           `-- footer
+
+
+5. Configure page tsConfig
+
+   a. page rootpage
+      a. Copy content of file
+         EXT:res/pages/01_rootpage/tsConfig.txt
+         into the page field tsConfig
+      b. Adapt the values to your needs
+
+   b. sysfolder Job Market - Jobs
+      a. Copy content of file
+         EXT:res/pages/01_rootpage/02_jobmarket_jobs/tsConfig.txt
+         into the page field tsConfig
+
+   c. sysfolder libraries
+      a. Copy content of file
+         EXT:res/pages/01_rootpage/03_libraries/tsConfig.txt
+         into the page field tsConfig
+
+   d. header
+      a. Copy content of file
+         EXT:res/pages/01_rootpage/03_libraries/04_footer/tsConfig.txt
+         into the page field tsConfig
+
+   e. footer
+      a. Copy content of file
+         EXT:res/pages/01_rootpage/03_libraries/05_header/tsConfig.txt
+         into the page field tsConfig
+
+
+6. Configure TypoScript
+
+   a. page rootpage
+      Add a TypoScript template
+      
+   b. Tab [General]
+      a. Template title:
+         page_jobmarket_001
+         Where 001 is the id of the current template
+      b. Website title:
+         Job Market - der schnelle Stellenmarkt
+      c. Constants:
+         a. Copy content of file
+            EXT:res/pages/01_rootpage/typoscript/constants.txt
+            into the constants field
+         b. Adapt the values to your needs
+
+   c. Tab [Options]
+      Enable fields:
+        [x] Constants
+        [x] Setup
+        [x] Rootlevel
+
+   d. Tab [Includes]
+      a. Enable field
+         [x] Include static templates AFTER basic template
+      b. Include static templates:
+         a. CSS Styled Content (css_styled_content)
+         b. Base Job Market (base_jobmarket)

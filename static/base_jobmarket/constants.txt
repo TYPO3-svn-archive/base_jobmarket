@@ -1,0 +1,17 @@
+PAGE_TARGET = _self
+
+content {
+  headerSpace = 0|0 
+  space       = 0|0
+}
+
+styles {
+  content {
+    imgtext {
+      maxW = 748
+      linkWrap {
+        width = 748
+      }
+    }
+  }
+}
