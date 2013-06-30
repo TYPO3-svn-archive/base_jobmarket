@@ -148,7 +148,7 @@ temp.header {
     20 < styles.content.get
     20 {
       slide = -1
-      select.where = colpos={$plugin.base_jobmarket.pages.root.slider.colpos}
+      select.where = colpos={$plugin.base_jobmarket.slider.colpos}
     }
     30 = RESTORE_REGISTER
   }
