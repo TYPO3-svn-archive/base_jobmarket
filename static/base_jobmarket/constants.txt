@@ -12,6 +12,9 @@ plugin.base_jobmarket {
       colpos =
     }
   }
+  slider {
+    maxImageWidth = 770
+  }
 }
 styles {
   content {
