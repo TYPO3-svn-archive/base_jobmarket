@@ -1,7 +1,14 @@
 3.0.2
   13-06-30
+  Feature
+  * #49525: Slider for org news
+            Effected files:
+            * static/news/402     ( new )
+            * res/html
+              * css
+                * basic.css
+              * index.html
   Improvement
-  Improvements
   * #i0005: Improve CSS
             Effected files:
             * res/html
