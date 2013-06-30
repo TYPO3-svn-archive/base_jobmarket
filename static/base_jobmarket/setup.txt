@@ -133,7 +133,7 @@ temp.header {
   header-logo {
     table = tt_content
     select {
-      pidInList = {$plugin.base_jobmarket.pages.libraries.header.logo}
+      pidInList = {$plugin.base_jobmarket.pages.root.libraries.header.logo}
       orderBy   = sorting
       max       = 1
       colPos    = 0
@@ -148,7 +148,7 @@ temp.header {
     20 < styles.content.get
     20 {
       slide = -1
-      select.where = colpos={$plugin.base_jobmarket.pages.slider.colpos}
+      select.where = colpos={$plugin.base_jobmarket.pages.root.slider.colpos}
     }
     30 = RESTORE_REGISTER
   }
