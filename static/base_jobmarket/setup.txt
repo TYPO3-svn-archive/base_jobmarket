@@ -16,7 +16,7 @@
 plugin.tx_automaketemplate_pi1 {
 
   content = FILE
-  content.file = {$myConst.paths.html}{$myConst.files.html.template}
+  content.file = {$plugin.base_jobmarket.paths.html}{$plugin.base_jobmarket.files.html.template}
 
   elements {
     BODY.all = 1
@@ -29,7 +29,7 @@ plugin.tx_automaketemplate_pi1 {
     DIV.all = 1
   }
 
-  relPathPrefix = {$myConst.paths.res}
+  relPathPrefix = {$plugin.base_jobmarket.paths.res}
 }
   // plugin.tx_automaketemplate_pi1
 
@@ -133,7 +133,7 @@ temp.header {
   header-logo {
     table = tt_content
     select {
-      pidInList = {$plugin.base_jobmarket.pages.header-logo}
+      pidInList = {$plugin.base_jobmarket.pages.libraries.header.logo}
       orderBy   = sorting
       max       = 1
       colPos    = 0
@@ -148,7 +148,7 @@ temp.header {
     20 < styles.content.get
     20 {
       slide = -1
-      select.where = colpos={$plugin.base_jobmarket.pages.header-slider.colpos}
+      select.where = colpos={$plugin.base_jobmarket.pages.slider.colpos}
     }
     30 = RESTORE_REGISTER
   }
@@ -169,7 +169,7 @@ temp.body {
   subparts {
     //headerBak  < styles.content.get
     //headerBak {
-    //  select.pidInList = {$myConst.pages.root.libraries.header}
+    //  select.pidInList = {$plugin.base_jobmarket.pages.root.libraries.header}
     //}
     header-logo   < temp.header.header-logo
     header-slider < temp.header.header-slider
@@ -187,15 +187,15 @@ temp.body {
               data = levelmedia: -1, slide
             }
           }
-          maxW = {$myConst.dims.header_image.maxW}
-          maxH = {$myConst.dims.header_image.maxH}
+          maxW = {$plugin.base_jobmarket.dims.header_image.maxW}
+          maxH = {$plugin.base_jobmarket.dims.header_image.maxH}
         }
         imageLinkWrap = 1
         imageLinkWrap {
           enable = 1
           typolink {
-            parameter = {$myConst.pages.root}
-            title     = {$myConst.words.title_tag_rootpage}
+            parameter = {$plugin.base_jobmarket.pages.root}
+            title     = {$plugin.base_jobmarket.words.title_tag_rootpage}
           }
         }
       }
@@ -203,7 +203,7 @@ temp.body {
       20 = HMENU
       20 {
         special = list
-        special.value = {$myConst.pages.root}
+        special.value = {$plugin.base_jobmarket.pages.root}
         1 < temp.tmenu
       }
       21 = TEXT
@@ -220,7 +220,7 @@ temp.body {
     }
     footer  < styles.content.get
     footer {
-      select.pidInList = {$myConst.pages.root.libraries.footer}
+      select.pidInList = {$plugin.base_jobmarket.pages.root.libraries.footer}
     }
   }
 }
@@ -239,7 +239,7 @@ temp.body {
   // config
 
 config {
-  baseURL           = {$myConst.host}
+  baseURL           = {$plugin.base_jobmarket.host}
   tx_realurl_enable = 1
   spamProtectEmailAddresses               = 6
   spamProtectEmailAddresses_atSubst       = <span style="display:none;">spamfilter</span><span class="dummy">@</span>
@@ -286,23 +286,23 @@ page {
     admPanel        = 1
   }
 
-  shortcutIcon = {$myConst.paths.res}{$myConst.files.html.favicon}
+  shortcutIcon = {$plugin.base_jobmarket.paths.res}{$plugin.base_jobmarket.files.html.favicon}
 
   headerData.10 < temp.htmlHead
   includeCSS {
-    styles        = {$myConst.paths.css}{$myConst.files.html.css}
+    styles        = {$plugin.base_jobmarket.paths.css}{$plugin.base_jobmarket.files.html.css}
   }
   meta {
-    author = {$myConst.client.name}
+    author = {$plugin.base_jobmarket.client.name}
     keywords {
       field    = keywords
-      ifEmpty  = {$myConst.client.seo.default.keywords}
+      ifEmpty  = {$plugin.base_jobmarket.client.seo.default.keywords}
       keywords = 1
     }
     description {
       field = description
       ifEmpty (
-        {$myConst.client.seo.default.description}
+        {$plugin.base_jobmarket.client.seo.default.description}
       )
     }
   }

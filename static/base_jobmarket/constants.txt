@@ -6,16 +6,58 @@ content {
 }
 
 plugin.base_jobmarket {
-  pages {
-    header-logo =
-    header-slider {
-      colpos =
+  client {
+    name = 
+    seo {
+      default {
+        // Default value for HTML head meta tag keywords
+        keywords    = 
+        // Default value for HTML head meta tag description
+        description = 
+      }
     }
   }
+  dims {
+    header_image {
+      maxW = 210
+      maxH = 420
+    }
+  }
+  files {
+    html {
+      template = index.html
+      css      = basic.css
+      favicon  = images/favicon.ico
+    }
+  }
+  host = 
+  pages {
+    root          = 
+    root {
+      libraries   = 
+      libraries {
+        header {
+          logo =
+        }
+        footer    = 
+      }
+    }
+  }
+  paths {
+    res  = EXT:base_jobmarket/res/
+    html = EXT:base_jobmarket/res/html/
+    css  = EXT:base_jobmarket/res/html/css/
+  }
   slider {
+    colpos        =
     maxImageWidth = 770
   }
+  words {
+    // HTML a href title tag for menu item rootpage
+    title_tag_rootpage = 
+  }
 }
+
 styles {
   content {
     imgtext {
