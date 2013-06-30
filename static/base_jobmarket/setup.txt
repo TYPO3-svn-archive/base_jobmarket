@@ -1,8 +1,8 @@
   // plugin.tx_automaketemplate_pi1
   // temp.tmenu
   // temp.menuMain
-  // temp.head
-  // temp.header2
+  // temp.htmlHead
+  // temp.header
   //   header-logo
   //   header-slider
   // temp.body
@@ -113,22 +113,22 @@ temp.menuMain {
 
   //////////////////////////////////////////////
   // 
-  // temp.head
+  // temp.htmlHead
 
-temp.head = TEMPLATE
-temp.head {
+temp.htmlHead = TEMPLATE
+temp.htmlHead {
   template      =< plugin.tx_automaketemplate_pi1
   workOnSubpart = DOCUMENT_HEADER
 }
-  // temp.head
+  // temp.htmlHead
 
 
 
   //////////////////////////////////////////////
   // 
-  // temp.header2
+  // temp.header
 
-temp.header2 {
+temp.header {
   header-logo = CONTENT
   header-logo {
     table = tt_content
@@ -153,7 +153,7 @@ temp.header2 {
     30 = RESTORE_REGISTER
   }
 }
-  // temp.header2
+  // temp.header
 
 
 
@@ -167,12 +167,12 @@ temp.body {
   workOnSubpart = DOCUMENT_BODY
 
   subparts {
-    header  < styles.content.get
-    header {
-      select.pidInList = {$myConst.pages.root.libraries.header}
-    }
-    header-logo   < temp.header2.header-logo
-    header-slider < temp.header2.header-slider
+    //headerBak  < styles.content.get
+    //headerBak {
+    //  select.pidInList = {$myConst.pages.root.libraries.header}
+    //}
+    header-logo   < temp.header.header-logo
+    header-slider < temp.header.header-slider
     content < styles.content.get
     menue = COA
     menue {
@@ -287,7 +287,7 @@ page {
 
   shortcutIcon = {$myConst.paths.res}{$myConst.files.html.favicon}
 
-  headerData.10 < temp.head
+  headerData.10 < temp.htmlHead
   includeCSS {
     styles        = {$myConst.paths.css}{$myConst.files.html.css}
   }

@@ -138,7 +138,7 @@ a:hover {
 *
 * elements */
 
-#header {
+#headerBak {
   background:#f66800;
 /*  border-bottom:1px solid white;*/
   color: white;
@@ -150,7 +150,7 @@ a:hover {
   width:210px;
 }
 
-#header2 {
+#header {
 /*    background-color: rgb(236,146,26); */
     color: #fff;
 /*    #00001, 120902, dwildt, 1- */
@@ -172,9 +172,10 @@ a:hover {
         background-color: #f66800;
         float: right;
         height: 130px;
-        margin-left: -5px;
+/*        margin-left: -5px;*/
         padding: 0 20px;
-        width: 192px;
+        text-align:right;
+        width: 241px;
     }
     /*#00001, 120902, dwildt+*/
     #header-slider {
