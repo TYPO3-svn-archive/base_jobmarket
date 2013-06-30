@@ -78,7 +78,7 @@ a {
 a,
 a:link,
 a:visited {
-  color:#f66800;
+  color:#EC921A;
   text-decoration:none;
 }
 a:active,
@@ -136,7 +136,7 @@ a:hover {
 * elements */
 
 #headerBak {
-  background:#f66800;
+  background:#EC921A;
 /*  border-bottom:1px solid white;*/
   color: white;
   font-size: 2em;
@@ -166,16 +166,16 @@ a:hover {
   }
     /*#00001, 120902, dwildt+*/
     #header-logo {
-        background-color: #f66800;
+        background-color: #EC921A;
         float: right;
         height: 130px;
 /*        margin-left: -5px;*/
-        padding: 0 20px 0 69px;
-        width: 192px;
+        padding: 0 20px 0 21px;
+        width: 191px;
     }
     /*#00001, 120902, dwildt+*/
     #header-slider {
-        background-color: #f66800;
+        background-color: #EC921A;
         height:130px;
         overflow: hidden;
         width: 768px;
@@ -200,13 +200,13 @@ input.ui-button {
   font-size: .8em;
 }
 #menue {
-  background:#f66800;
+  background:#EC921A;
   float:right;
   overflow:hidden;
   width:210px;
 }
 #footer {
-  background:#f66800;
+  background:#EC921A;
 /*  border-top:1px solid white;*/
   bottom:0;
   color: #000;
@@ -289,7 +289,7 @@ h2 {
 .tx-browser-pi1 a:active,
 .tx-browser-pi1 a:focus,
 .tx-browser-pi1 a:hover {
-  color:#f66800;
+  color:#EC921A;
 }
 .tx-browser-pi1 ul.indexBrowser li.selected, .tx-browser-pi1 ul.modeSelector li.selected {
   background:none repeat scroll 0 0 #FF8C00;
