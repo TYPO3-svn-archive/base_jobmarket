@@ -1,3 +1,17 @@
+3.0.2
+  13-06-30
+  Improvement
+  Improvements
+  * #i0005: Improve CSS
+            Effected files:
+            * res/html
+              * css
+                * basic.css
+                * background
+                  * wrap-horizontal_02.gif            ( new )
+                  * typo3_netzmacher_background.png   ( new )
+              * index.html
+  
 1.3.3
   12-03-17
   Improvement
