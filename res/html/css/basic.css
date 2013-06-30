@@ -159,7 +159,7 @@ a:hover {
 /*    left: 0;
     position: absolute;
     top: 0; */
-    width: 960px;
+    width: 1000px;
 }
   #wrap-slider-logo {
       height: 130px;
@@ -169,12 +169,12 @@ a:hover {
   }
     /*#00001, 120902, dwildt+*/
     #header-logo {
-        background-color: rgb(236,146,26);
+        background-color: #f66800;
         float: right;
         height: 130px;
         margin-left: -5px;
         padding: 0 20px;
-        width: 201px;
+        width: 192px;
     }
     /*#00001, 120902, dwildt+*/
     #header-slider {
