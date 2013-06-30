@@ -128,7 +128,6 @@ temp.head {
   // 
   // temp.header2
 
-temp.header2 = COA
 temp.header2 {
   header-logo = CONTENT
   header-logo {
@@ -172,7 +171,8 @@ temp.body {
     header {
       select.pidInList = {$myConst.pages.root.libraries.header}
     }
-    header2 < temp.header2
+    header-logo   < temp.header2.header-logo
+    header-slider < temp.header2.header-slider
     content < styles.content.get
     menue = COA
     menue {
