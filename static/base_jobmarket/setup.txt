@@ -143,7 +143,7 @@ temp.header {
   header-slider {
     10 = LOAD_REGISTER
     10 {
-      maxImageWidth       = 720
+      maxImageWidth = {$plugin.base_jobmarket.slider.maxImageWidth}
     }
     20 < styles.content.get
     20 {
