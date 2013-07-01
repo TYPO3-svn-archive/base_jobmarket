@@ -78,7 +78,7 @@ a {
 a,
 a:link,
 a:visited {
-  color:#EC921A;
+  color:#F79210;
   text-decoration:none;
 }
 a:active,
@@ -135,7 +135,7 @@ a:hover {
 * elements */
 
 #headerBak {
-  background:#EC921A;
+  background:#F79210;
 /*  border-bottom:1px solid white;*/
   color: white;
   font-size: 2em;
@@ -165,7 +165,7 @@ a:hover {
   }
     /*#00001, 120902, dwildt+*/
     #header-logo {
-        background-color: #EC921A;
+        background-color: #F79210;
         float: right;
         height: 116px;
 /*        margin-left: -5px;*/
@@ -174,7 +174,7 @@ a:hover {
     }
     /*#00001, 120902, dwildt+*/
     #header-slider {
-        background-color: #EC921A;
+        background-color: #F79210;
         height:130px;
         overflow: hidden;
         width: 768px;
@@ -199,13 +199,13 @@ input.ui-button {
   font-size: .8em;
 }
 #menue {
-  background:#EC921A;
+  background:#F79210;
   float:right;
   overflow:hidden;
   width:210px;
 }
 #footer {
-  background:#EC921A;
+  background:#F79210;
   color: #000;
 /*  height:6.4em;*/
   padding:1em 0 .1em 0;
@@ -295,7 +295,7 @@ h3.align-right {
 .tx-browser-pi1 a:active,
 .tx-browser-pi1 a:focus,
 .tx-browser-pi1 a:hover {
-  color:#EC921A;
+  color:#F79210;
 }
 .tx-browser-pi1 ul.indexBrowser li.selected, .tx-browser-pi1 ul.modeSelector li.selected {
   background:none repeat scroll 0 0 #FF8C00;
