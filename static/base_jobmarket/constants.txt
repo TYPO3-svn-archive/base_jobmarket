@@ -1,63 +1,58 @@
-PAGE_TARGET = _self
 
-content {
-  headerSpace = 0|0 
-  space       = 0|0
-}
+  //////////////////////////////////
+  //
+  // plugin.base_jobmarket
+  // styles.content
 
+
+
+//PAGE_TARGET = _self
+
+//content {
+//  headerSpace = 0|0 
+//  space       = 0|0
+//}
+
+  // plugin.base_jobmarket
 plugin.base_jobmarket {
-  client {
-    name = 
-    seo {
-      default {
-        // Default value for HTML head meta tag keywords
-        keywords    = 
-        // Default value for HTML head meta tag description
-        description = 
-      }
-    }
-  }
-  dims {
-    header_image {
-      maxW = 210
-      maxH = 420
-    }
-  }
-  files {
-    html {
-      template = index.html
-      css      = basic.css
-      favicon  = images/favicon.ico
-    }
-  }
-  host = 
-  pages {
-    root          = 
-    root {
-      libraries   = 
-      libraries {
-        header {
-          logo =
-        }
-        footer    = 
-      }
-    }
-  }
-  paths {
-    res  = EXT:base_jobmarket/res/
-    html = EXT:base_jobmarket/res/html/
-    css  = EXT:base_jobmarket/res/html/css/
-  }
-  slider {
-    colpos        =
-    maxImageWidth = 770
-  }
-  words {
-    // HTML a href title tag for menu item rootpage
-    title_tag_rootpage = 
-  }
-}
+  # cat=Job Market Template - Client//100;   type=string;   label= Author: Author of the website
+  client.name = 
 
+  # cat=Job Market Template - Host//100;   type=string;   label= Host: Host with an ending slash! Example: http://www.my-host.org/
+  host = 
+  
+  # cat=Job Market Template - Pages//100;   type=+int;   label= Root page: Uid of the root page
+  pages.root          = 
+  # cat=Job Market Template - Pages//101;   type=+int;   label= Logo: Uid of the page or directory, which contains the content element with the header logo
+  pages.root.libraries.header.logo =
+  # cat=Job Market Template - Pages//102;   type=+int;   label= Footer: Uid of the page or directory, which contains the content element with the footer
+  pages.root.libraries.footer    = 
+
+  # cat=Job Market Template - Paths//100;   type=string;   label= CSS file: Path to the CSS file
+  paths.css     = EXT:base_jobmarket/res/html/css/basic.css
+  # cat=Job Market Template - Paths//101;   type=string;   label= Favicon: Path to the favicon
+  paths.favicon = EXT:base_jobmarket/res/html/css/basic.css
+  # cat=Job Market Template - Paths//102;   type=string;   label= HTML Template: Path to the HTML template file
+  paths.html    = EXT:base_jobmarket/res/iamges/favicon.ico
+  # cat=Job Market Template - Paths//103;   type=string;   label= Resource directory: Path to the directory with the resources
+  paths.res     = EXT:base_jobmarket/res/
+
+  # cat=Job Market Template - Phrases//100;   type=string;   label= Root page link label: Label for the Link of the root page in the manu
+  phrases.title_tag_rootpage = 
+
+  # cat=Job Market Template - SEO//100;   type=string;   label= Description: Search Engine Optimisation: default description
+  seo.description = 
+  # cat=Job Market Template - SEO//101;   type=string;   label= Keywords: Search Engine Optimisation: default keywords separated by comma
+  seo.keywords    = 
+
+  # cat=Job Market Template - Slider//100;   type=+int;   label= Columns position: Columns position of your slider plugin. 0: normal, 1: left, 2:right, 3: marginal
+  slider.colpos        =
+  # cat=Job Market Template - Slider//101;   type=+int;   label= Maximum Image Width: The maximum width of images in the slider 
+  slider.maxImageWidth = 770
+}
+  // plugin.base_jobmarket
+
+  // styles.content
 styles {
   content {
     imgtext {
@@ -68,3 +63,4 @@ styles {
     }
   }
 }
+  // styles.content

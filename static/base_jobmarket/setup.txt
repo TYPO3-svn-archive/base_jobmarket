@@ -16,7 +16,7 @@
 plugin.tx_automaketemplate_pi1 {
 
   content = FILE
-  content.file = {$plugin.base_jobmarket.paths.html}{$plugin.base_jobmarket.files.html.template}
+  content.file = {$plugin.base_jobmarket.paths.html}
 
   elements {
     BODY.all = 1
@@ -176,30 +176,6 @@ temp.body {
     content < styles.content.get
     menue = COA
     menue {
-      10 = IMAGE
-      10 {
-        file {
-          import = uploads/media/
-          import {
-            field   = media
-            listNum = 0
-            override {
-              data = levelmedia: -1, slide
-            }
-          }
-          maxW = {$plugin.base_jobmarket.dims.header_image.maxW}
-          maxH = {$plugin.base_jobmarket.dims.header_image.maxH}
-        }
-        imageLinkWrap = 1
-        imageLinkWrap {
-          enable = 1
-          typolink {
-            parameter = {$plugin.base_jobmarket.pages.root}
-            title     = {$plugin.base_jobmarket.words.title_tag_rootpage}
-          }
-        }
-      }
-      10 >
       20 = HMENU
       20 {
         special = list
@@ -286,23 +262,23 @@ page {
     admPanel        = 1
   }
 
-  shortcutIcon = {$plugin.base_jobmarket.paths.res}{$plugin.base_jobmarket.files.html.favicon}
+  shortcutIcon = {$plugin.base_jobmarket.paths.favicon}
 
   headerData.10 < temp.htmlHead
   includeCSS {
-    styles        = {$plugin.base_jobmarket.paths.css}{$plugin.base_jobmarket.files.html.css}
+    styles        = {$plugin.base_jobmarket.paths.css}
   }
   meta {
     author = {$plugin.base_jobmarket.client.name}
     keywords {
       field    = keywords
-      ifEmpty  = {$plugin.base_jobmarket.client.seo.default.keywords}
+      ifEmpty  = {$plugin.base_jobmarket.seo.keywords}
       keywords = 1
     }
     description {
       field = description
       ifEmpty (
-        {$plugin.base_jobmarket.client.seo.default.description}
+        {$plugin.base_jobmarket.seo.description}
       )
     }
   }
