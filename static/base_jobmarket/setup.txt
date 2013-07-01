@@ -193,6 +193,17 @@ temp.body {
         )
       }
       22 < temp.menuMain
+        // Menu bottom
+      90 = CONTENT
+      90 {
+        table = tt_content
+        select {
+          pidInList = {$plugin.base_jobmarket.pages.root.libraries.menu.bottom}
+          orderBy   = sorting
+          //max       = 1
+          //colPos    = 0
+        }
+      }
     }
     footer  < styles.content.get
     footer {

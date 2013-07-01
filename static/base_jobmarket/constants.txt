@@ -22,11 +22,13 @@ plugin.base_jobmarket {
   host = 
   
   # cat=Job Market Template - Pages*//100;   type=+int;   label= Root page*: Obligate! Uid of the root page
-  pages.root          = 
+  pages.root                        = 100000
   # cat=Job Market Template - Pages*//101;   type=+int;   label= Logo*: Obligate! Uid of the page or directory, which contains the content element with the header logo
-  pages.root.libraries.header.logo =
+  pages.root.libraries.header.logo  = 100000
   # cat=Job Market Template - Pages*//102;   type=+int;   label= Footer*: Obligate! Uid of the page or directory, which contains the content element with the footer
-  pages.root.libraries.footer    = 
+  pages.root.libraries.footer       = 100000
+  # cat=Job Market Template - Pages*//103;   type=+int;   label= Menu Bottom: Uid of the page or directory, which contains the content element for the bottom of the menu column
+  pages.root.libraries.menu.bottom  = 100000 
 
   # cat=Job Market Template - Paths//100;   type=string;   label= CSS file: Path to the CSS file
   paths.css     = EXT:base_jobmarket/res/html/css/basic.css
