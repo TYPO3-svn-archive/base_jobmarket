@@ -15,17 +15,17 @@
 
   // plugin.base_jobmarket
 plugin.base_jobmarket {
-  # cat=Job Market Template - Client//100;   type=string;   label= Author: Author of the website
+  # cat=Job Market Template - Client*//100;   type=string;   label= Author*: Obligate! Author of the website
   client.name = 
 
-  # cat=Job Market Template - Host//100;   type=string;   label= Host: Host with an ending slash! Example: http://www.my-host.org/
+  # cat=Job Market Template - Host//100;   type=string;   label= Host*: Obligate! Host with an ending slash! Example: http://www.my-host.org/
   host = 
   
-  # cat=Job Market Template - Pages//100;   type=+int;   label= Root page: Uid of the root page
+  # cat=Job Market Template - Pages*//100;   type=+int;   label= Root page*: Obligate! Uid of the root page
   pages.root          = 
-  # cat=Job Market Template - Pages//101;   type=+int;   label= Logo: Uid of the page or directory, which contains the content element with the header logo
+  # cat=Job Market Template - Pages*//101;   type=+int;   label= Logo*: Obligate! Uid of the page or directory, which contains the content element with the header logo
   pages.root.libraries.header.logo =
-  # cat=Job Market Template - Pages//102;   type=+int;   label= Footer: Uid of the page or directory, which contains the content element with the footer
+  # cat=Job Market Template - Pages*//102;   type=+int;   label= Footer*: Obligate! Uid of the page or directory, which contains the content element with the footer
   pages.root.libraries.footer    = 
 
   # cat=Job Market Template - Paths//100;   type=string;   label= CSS file: Path to the CSS file
@@ -37,7 +37,7 @@ plugin.base_jobmarket {
     # cat=Job Market Template - Paths//103;   type=string;   label= Resource directory: Path to the directory with the resources
   paths.res     = EXT:base_jobmarket/res/
 
-  # cat=Job Market Template - Phrases//100;   type=string;   label= Root page link label: Label for the Link of the root page in the manu
+  # cat=Job Market Template - Phrases//100;   type=string;   label= Root page link label*: Obligate! Label for the Link of the root page in the manu
   phrases.title_tag_rootpage = 
 
   # cat=Job Market Template - SEO//100;   type=string;   label= Description: Search Engine Optimisation: default description
