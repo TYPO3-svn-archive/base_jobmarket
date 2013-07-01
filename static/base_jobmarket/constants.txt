@@ -18,7 +18,7 @@ plugin.base_jobmarket {
   # cat=Job Market Template - Client*//100;   type=string;   label= Author*: Obligate! Author of the website
   client.name = 
 
-  # cat=Job Market Template - Host//100;   type=string;   label= Host*: Obligate! Host with an ending slash! Example: http://www.my-host.org/
+  # cat=Job Market Template - Host*//100;   type=string;   label= Host*: Obligate! Host with an ending slash! Example: http://www.my-host.org/
   host = 
   
   # cat=Job Market Template - Pages*//100;   type=+int;   label= Root page*: Obligate! Uid of the root page
