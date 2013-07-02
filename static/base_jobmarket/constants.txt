@@ -34,14 +34,18 @@ plugin.base_jobmarket {
   # cat=Job Market Template - Pages*//105;   type=+int;   label= Slider JSS*: *Obligate! Uid of the page, which contains the content element with the JavaScript-Code for the header slider 
   pages.root.libraries.header.slider.jss  = 100000 
 
-  # cat=Job Market Template - Paths//100;   type=string;   label= CSS file: Path to the CSS file
-  paths.css     = EXT:base_jobmarket/res/html/css/basic.css
-  # cat=Job Market Template - Paths//101;   type=string;   label= Favicon: Path to the favicon
-  paths.favicon = EXT:base_jobmarket/res/iamges/favicon.ico
-  # cat=Job Market Template - Paths//102;   type=string;   label= HTML Template: Path to the HTML template file
-  paths.html    = EXT:base_jobmarket/res/html/index.html
+  # cat=Job Market Template - Paths//100;     type=string;   label= CSS file: Path to the CSS file
+  paths.css           = EXT:base_jobmarket/res/html/css/basic.css
+  # cat=Job Market Template - Paths//101;     type=string;   label= Favicon: Path to the favicon
+  paths.favicon       = EXT:base_jobmarket/res/iamges/favicon.ico
+  # cat=Job Market Template - Paths//102;     type=string;   label= HTML Template: Path to the HTML template file
+  paths.html          = EXT:base_jobmarket/res/html/index.html
     # cat=Job Market Template - Paths//103;   type=string;   label= Resource directory: Path to the directory with the resources
-  paths.res     = EXT:base_jobmarket/res/
+  paths.res           = EXT:base_jobmarket/res/
+    # cat=Job Market Template - Paths//104;   type=string;   label= Slider CSS: Path to the slider css file
+  paths.slider.css    = EXT:base_jobmarket/jQuery/fadeSlideShow/fadeSlideShow.css
+    # cat=Job Market Template - Paths//105;   type=string;   label= Slider jQuery: Path to jQuery slider
+  paths.slider.jQuery = EXT:base_jobmarket/jQuery/fadeSlideShow/fadeSlideShow-minified.js
 
   # cat=Job Market Template - Phrases//100;   type=string;   label= Root page link label*: *Obligate! Label for the Link of the root page in the manu
   phrases.title_tag_rootpage = 

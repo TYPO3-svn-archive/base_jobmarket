@@ -6,6 +6,9 @@
   //   header-logo
   //   header-slider
   // temp.body
+  // config
+  // tt_content
+  // page
 
 
 
@@ -314,5 +317,12 @@ page {
 
   bodyTag = <body>
   10 < temp.body
+
+  includeCSS {
+    fadeSlideShow = {$plugin.base_jobmarket.paths.slider.jQuery.css}
+  }
+  includeJSFooter {
+    fadeSlideShow = {$plugin.base_jobmarket.paths.slider.jQuery
+  }
 }
   // page
