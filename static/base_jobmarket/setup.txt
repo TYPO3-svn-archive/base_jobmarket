@@ -149,18 +149,20 @@ temp.header {
       // Slider: JSS, content
     20 = COA
     20 {
+        // JSS
       10 < styles.content.get
       10 {
         select {
-          where = colpos={$plugin.base_jobmarket.pages.root.libraries.header.slider.jss}
+          pidInList = {$plugin.base_jobmarket.pages.root.libraries.header.slider.jss}
         }
       }
+        // Content
       20 = COA
       20 {
         10 < styles.content.get
         10 {
           select {
-            where = colpos={$plugin.base_jobmarket.pages.root.libraries.header.slider.content}
+            pidInList = {$plugin.base_jobmarket.pages.root.libraries.header.slider.content}
           }
         }
         wrap = <div id="slider">|</div>
