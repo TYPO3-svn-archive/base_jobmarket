@@ -319,7 +319,7 @@ page {
   10 < temp.body
 
   includeCSS {
-    fadeSlideShow = {$plugin.base_jobmarket.paths.slider.jQuery.css}
+    fadeSlideShow = {$plugin.base_jobmarket.paths.slider.css}
   }
   includeJSFooter {
     fadeSlideShow = {$plugin.base_jobmarket.paths.slider.jQuery
