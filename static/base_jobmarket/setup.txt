@@ -168,7 +168,7 @@ temp.header {
             pidInList = {$plugin.base_jobmarket.pages.root.libraries.header.slider.content}
           }
         }
-        wrap = <div id="slider">|</div>
+        wrap = <div id="slidshow">|</div>
       }
     }
     30 = RESTORE_REGISTER
