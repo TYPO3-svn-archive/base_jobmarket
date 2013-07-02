@@ -212,6 +212,18 @@ input.ui-button {
   text-align:center;
   width:1000px;
 }
+#slider {
+  background:#F79210;
+  background-image:url("background/wrap-horizontal_04.gif");
+  background-repeat:repeat-y;
+  color: white;
+}
+#slider h1, 
+#slider h2, 
+#slider h3,
+#slider p {
+  padding:0.4em 1em 0 1em;
+}
 /* elements */
 
 
