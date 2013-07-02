@@ -241,12 +241,14 @@ h2 {
 }
 h1.align-center, 
 h2.align-center,
-h3.align-center {
+h3.align-center,
+p.align-center {
   text-align:center;
 }
 h1.align-right, 
 h2.align-right,
-h3.align-right {
+h3.align-right,
+p.align-right  {
   text-align:right;
 }
 #menue a,
