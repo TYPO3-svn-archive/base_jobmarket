@@ -141,14 +141,30 @@ temp.header {
   }
   header-slider = COA
   header-slider {
+      // maxImageWidth
     10 = LOAD_REGISTER
     10 {
       maxImageWidth = {$plugin.base_jobmarket.slider.maxImageWidth}
     }
-    20 < styles.content.get
+      // Slider: JSS, content
+    20 = COA
     20 {
-      slide = -1
-      select.where = colpos={$plugin.base_jobmarket.slider.colpos}
+      10 < styles.content.get
+      10 {
+        select {
+          where = colpos={$plugin.base_jobmarket.pages.root.libraries.header.slider.jss}
+        }
+      }
+      20 = COA
+      20 {
+        10 < styles.content.get
+        10 {
+          select {
+            where = colpos={$plugin.base_jobmarket.pages.root.libraries.header.slider.content}
+          }
+        }
+        wrap = <div id="slider">|</div>
+      }
     }
     30 = RESTORE_REGISTER
   }
