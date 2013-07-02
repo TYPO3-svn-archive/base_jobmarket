@@ -322,7 +322,7 @@ page {
     fadeSlideShow = {$plugin.base_jobmarket.paths.slider.css}
   }
   includeJSFooter {
-    fadeSlideShow = {$plugin.base_jobmarket.paths.slider.jQuery
+    fadeSlideShow = {$plugin.base_jobmarket.paths.slider.jQuery}
   }
 }
   // page
