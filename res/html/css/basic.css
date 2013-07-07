@@ -183,6 +183,7 @@ a:hover {
 
 
 #content {
+  background:white;
   float:left;
   overflow:hidden;
   padding:9px 10px 2em 10px;
