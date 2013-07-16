@@ -149,28 +149,16 @@ temp.header {
     10 {
       maxImageWidth = {$plugin.base_jobmarket.slider.maxImageWidth}
     }
-      // Slider: JSS, content
+      // Slider: content
     20 = COA
     20 {
-        // JSS
       10 < styles.content.get
       10 {
         select {
-          pidInList = {$plugin.base_jobmarket.pages.root.libraries.header.slider.jss}
+          pidInList = {$plugin.base_jobmarket.pages.root.libraries.header.slider.content}
         }
       }
-      10 >
-        // Content
-      20 = COA
-      20 {
-        10 < styles.content.get
-        10 {
-          select {
-            pidInList = {$plugin.base_jobmarket.pages.root.libraries.header.slider.content}
-          }
-        }
-        wrap = <div id="slideshow">|</div>
-      }
+      wrap = <div id="slideshow">|</div>
     }
     30 = RESTORE_REGISTER
   }
