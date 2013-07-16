@@ -333,7 +333,7 @@ page {
         jQuery(document).ready(function(){
           jQuery('#slideshow').fadeSlideShow({
             width             : {$plugin.base_jobmarket.slider.maxImageWidth}, // Weite der SlideShow
-            height            : 130,              // Höhe der Slideshow
+            height            : {$plugin.base_jobmarket.slider.maxImageHeight}, // Höhe der Slideshow
             speed             : 'slow',           // Animationsgeschwindigkeit
             interval          : 6000,             // Zeit zwischen Bildwechsel 1000 = 1 Sekunde
             PlayPauseElement  : 'fssPlayPause',   // ID für Play / Pause Element

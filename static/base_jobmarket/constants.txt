@@ -57,7 +57,9 @@ plugin.base_jobmarket {
 
   # cat=Job Market Template - Slider//100;   type=+int;   label= Columns position: Columns position of your slider plugin. 0: normal, 1: left, 2:right, 3: marginal
   slider.colpos        =
-  # cat=Job Market Template - Slider//101;   type=+int;   label= Maximum Image Width: The maximum width of images in the slider 
+  # cat=Job Market Template - Slider//101;   type=+int;   label= Maximum Image Height: The maximum height of images in the slider
+  slider.maxImageHeight = 130
+  # cat=Job Market Template - Slider//102;   type=+int;   label= Maximum Image Width: The maximum width of images in the slider 
   slider.maxImageWidth = 770
 }
   // plugin.base_jobmarket
