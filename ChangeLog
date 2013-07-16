@@ -1,3 +1,11 @@
+3.0.3
+  13-07-16
+  Feature
+  * #50083: Integration of JSS slider script
+            Effected files:
+            * static/base_jobmarket
+              * setup.txt
+
 3.0.2
   13-06-30
   Feature

@@ -37,7 +37,7 @@ plugin.base_jobmarket {
   # cat=Job Market Template - Paths//100;     type=string;   label= CSS file: Path to the CSS file
   paths.css           = EXT:base_jobmarket/res/html/css/basic.css
   # cat=Job Market Template - Paths//101;     type=string;   label= Favicon: Path to the favicon
-  paths.favicon       = EXT:base_jobmarket/res/iamges/favicon.ico
+  paths.favicon       = EXT:base_jobmarket/res/images/favicon.ico
   # cat=Job Market Template - Paths//102;     type=string;   label= HTML Template: Path to the HTML template file
   paths.html          = EXT:base_jobmarket/res/html/index.html
     # cat=Job Market Template - Paths//103;   type=string;   label= Resource directory: Path to the directory with the resources
