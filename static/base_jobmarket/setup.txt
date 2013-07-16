@@ -350,7 +350,7 @@ page {
             allowKeyboardCtrl : false,            // Keyboardsteuerung verbieten (Konflikt mit Formularen: Leerzeichen)
             autoplay          : true              // Autoplay an
           });
-        });}
+        });
 )
     }
   }
