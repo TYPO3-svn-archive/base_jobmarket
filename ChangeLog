@@ -1,6 +1,8 @@
 3.0.3
-  13-07-16
+  13-07-23
   Feature
+  * #i0008: Improve CSS
+            input is removed in basic.cc
   * #50083: Integration of JSS slider script
             Effected files:
             * static/base_jobmarket

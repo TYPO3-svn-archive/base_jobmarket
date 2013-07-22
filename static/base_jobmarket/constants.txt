@@ -31,8 +31,6 @@ plugin.base_jobmarket {
   pages.root.libraries.menu.bottom  = 100000 
   # cat=Job Market Template - Pages*//104;   type=+int;   label= Slider Content*: *Obligate! Uid of the page, which contains the content element for the header slider 
   pages.root.libraries.header.slider.content  = 100000 
-  # cat=Job Market Template - Pages*//105;   type=+int;   label= Slider JSS*: *Obligate! Uid of the page, which contains the content element with the JavaScript-Code for the header slider 
-  pages.root.libraries.header.slider.jss  = 100000 
 
   # cat=Job Market Template - Paths//100;     type=string;   label= CSS file: Path to the CSS file
   paths.css           = EXT:base_jobmarket/res/html/css/basic.css
