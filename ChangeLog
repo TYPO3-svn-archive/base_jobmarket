@@ -2,7 +2,8 @@
   13-07-23
   Feature
   * #i0008: Improve CSS
-            input is removed in basic.cc
+            * input is removed in basic.css
+            * border: none; is removed in basic.css
   * #50083: Integration of JSS slider script
             Effected files:
             * static/base_jobmarket
