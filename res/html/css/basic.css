@@ -23,8 +23,9 @@ body {
 
 #wrap-outer {
   background: transparent url("background/typo3_netzmacher_background.png") scroll center repeat;
-  min-height: 96%;
-  padding: 2% 0;
+/*  min-height: 96%;
+  padding: 2% 0;*/
+  height:100%;
 }
 #wrap-horizontal {
   background-color:#F79210;
@@ -34,8 +35,7 @@ body {
 }
 
 #wrap-vertical {
-}
-#wrap-box {
+  height:100%;
 }
 /* wraps */
 
@@ -74,6 +74,7 @@ input.ui-button {
 }
 #menue {
   padding-top:1em;
+  height:100%;
 }
 
 #footer {
@@ -225,5 +226,5 @@ button.expand,
 }
 
 .row {
-  color:#F79210;
+  background-color:#F79210;
 }
