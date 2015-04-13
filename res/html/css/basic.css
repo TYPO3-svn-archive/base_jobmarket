@@ -1,6 +1,6 @@
 html {
-  height:auto;
-  min-height:100%;
+/*  height:auto;
+  min-height:100%;*/
 }
 body {
   margin: 0 auto;
@@ -60,6 +60,7 @@ body {
 #content {
   background-color:#FFF;
   padding-top:1em;
+  height:100%;
 }
 #content ul#record-browser {
   margin: 0;
