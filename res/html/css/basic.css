@@ -238,6 +238,9 @@ button.expand,
 button, .button {
   background-color: #f79210;
 }
+button:hover, button:focus, .button:hover, .button:focus {
+  background-color: #cc7607;
+}
 button.disabled, button[disabled], .button.disabled, .button[disabled] {
   background-color: #f79210;
 }
