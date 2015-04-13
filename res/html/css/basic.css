@@ -244,8 +244,9 @@ button.expand,
 
 /*
  * Clearfix
+ * http://www.webmasterpro.de/coding/article/equal-height-columns-mit-css3-gradient.html
  */
-.clearfix:after { /* Firefox, IE8, Opera, Safari etc. */
+.equalheight:after { /* Firefox, IE8, Opera, Safari etc. */
   content: ".";
   display: block;
   height: 0;
@@ -253,13 +254,10 @@ button.expand,
   visibility: hidden;
 }
 
-* +html .clearfix {
+* +html .equalheight {
   display: inline-block;
 }
 
-* html .clearfix {
+* html .equalheight {
   height: 1%;
-}
-html, body {
-  height:auto;
 }
