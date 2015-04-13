@@ -229,7 +229,10 @@ button.expand,
   background-color:#FFF;
 }
 #content .accordion-navigation .row {
-    background: #E8E8E8;
+  background: #E8E8E8;
+}
+#content .accordion-navigation .content .row {
+  background: #FFF;
 }
 
 /*
