@@ -31,9 +31,17 @@ body {
   -webkit-box-shadow: 5px 5px 25px #222;
   box-shadow: 5px 5px 25px #222;
 }
+/*
+ * http://www.webmasterpro.de/coding/article/equal-height-columns-mit-css3-gradient.html
+ * http://www.css3factory.com/linear-gradients/
+ */
 
 #wrap-content {
-  background: -moz-linear-gradient(left, #FFFFFF 75%, #F79210 75%);
+  background-image: linear-gradient(to left, #FFFFFF 75%, #F79210 75%);
+  background-image: -moz-linear-gradient(left, #FFFFFF 75%, #F79210 75%);
+  background-image: -ms-linear-gradient(left, #FFFFFF 75%, #F79210 75%);
+  background-image: -o-linear-gradient(left, #FFFFFF 75%, #F79210 75%);
+  background-image: -webkit-linear-gradient(left, #FFFFFF 75%, #F79210 75%);
 }
 /* wraps */
 
@@ -243,8 +251,7 @@ button.expand,
 }
 
 /*
- * Clearfix
- * http://www.webmasterpro.de/coding/article/equal-height-columns-mit-css3-gradient.html
+ * http://www.css3factory.com/linear-gradients/
  */
 .equalheight:after { /* Firefox, IE8, Opera, Safari etc. */
   content: ".";
