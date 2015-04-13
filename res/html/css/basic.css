@@ -1,3 +1,7 @@
+html {
+  height:auto;
+  min-height:100%;
+}
 body {
   margin: 0 auto;
   background-color: rgb(114,112,111); /* Old browsers */
