@@ -78,9 +78,6 @@ input.ui-button {
   padding:1em 0;
   text-align:center;
 }
-#footer p {
-  margin-bottom:0;
-}
 #header-slider {
   background-image:url("background/typo3_slider_w770px_h130px.png");
   background-repeat:repeat-y;
@@ -132,6 +129,9 @@ p.align-right  {
   color:white;
   text-decoration:none;
 }
+#footer p {
+  margin-bottom:0;
+}
 #menue a:active,
 #menue a:focus,
 #menue a:hover,
@@ -156,6 +156,7 @@ p.align-right  {
 #menue ul ul,
 #menue ol ol {
   margin-left: 1em;
+  font-size:1em;
 }
 #menue ul ul ul,
 #menue ol ol ol {
