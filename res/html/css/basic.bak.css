@@ -1,3 +1,54 @@
+/*
+  reset
+  html, body, a, h1-3, .cb
+  wraps
+  elements
+  tags
+  tx-browser-pi1
+*/
+
+
+
+/**********************************
+*
+* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, p, ul, ol, dl {
+  margin-bottom: 1em;
+}
+ul, ol {
+  margin-left: 1.2em;
+}
+ol {
+  padding-left: 2em;
+}
+ul ul, ol ol {
+  margin-bottom: 0;
+}
+
+form, pre {
+  margin: 1em 0;
+}
+fieldset, 
+legend {
+  border: none;
+}
+
+/* reset */
+
+
+/**********************************
+*
+* html, body, a, h1-3, .cb */
+
+html {
+/*  height: 100%;        For FF and Opera: background-image will centered vertically */
+  overflow-y: scroll; /* There is a scroll-bar in any case */
+}
 body {
   margin: 0 auto;
   background-color: rgb(114,112,111); /* Old browsers */
@@ -10,21 +61,21 @@ body {
   background: linear-gradient(top, #444 0%, rgb(114,112,111) 50%, rgb(114,112,111) 100%); /* W3C */
 
   color: #333;
-/*  font-family: 'DejaVu Sans Condensed', Trebuchet MS, Geneva, Arial, Helvetica, Verdana, sans-serif;
+  font-family: 'DejaVu Sans Condensed', Trebuchet MS, Geneva, Arial, Helvetica, Verdana, sans-serif;
   font-size: 81%;
   -webkit-text-size-adjust: 81%;
   -ms-text-size-adjust: 81%;
 
   position: relative;
-  width: 100%;*/
+  width: 100%;
 }
-/*h1, h2, h3 {
+h1, h2, h3 {
   font-size: 1em;
-}*/
-/*a {
+}
+a {
   font-weight:bold;
-}*/
-/*a,
+}
+a,
 a:link,
 a:visited {
   color:#F79210;
@@ -34,7 +85,7 @@ a:active,
 a:focus,
 a:hover {
   color:#8B0000;
-}*/
+}
 .cb {
   clear: both;
   font-size:0px;
@@ -49,7 +100,7 @@ a:hover {
 
 #wrap-outer {
   background: transparent url("background/typo3_netzmacher_background.png") scroll center repeat;
-  min-height: 96%;
+  min-height: 98%;
   padding: 2% 0;
 }
 #wrap-horizontal {
@@ -83,29 +134,52 @@ a:hover {
 *
 * elements */
 
+#headerBak {
+  background:#F79210;
+/*  border-bottom:1px solid white;*/
+  color: white;
+  font-size: 2em;
+  height:44px;
+  padding:10px 0 0 788px;
+  position: absolute;
+  top: 0;
+  width:210px;
+}
+
 #header {
+/*    background-color: rgb(236,146,26); */
     color: #fff;
+/*    #00001, 120902, dwildt, 1- */
+/*    padding: 150px 0 0;*/
+/*    #00002, 121001, dwildt, 3- */
+/*    left: 0;
     position: absolute;
     top: 0; */
     width: 1000px;
 }
   #wrap-slider-logo {
       height: 130px;
+  /* 121001, dwildt, 1- */
+  /*    overflow: hidden;*/
       position:relative;
   }
+    /*#00001, 120902, dwildt+*/
     #header-logo {
         background-color: #F79210;
         float: right;
         height: 116px;
+/*        margin-left: -5px;*/
         padding: 14px 20px 0 21px;
         width: 191px;
     }
+    /*#00001, 120902, dwildt+*/
     #header-slider {
         background-color: #F79210;
         height:130px;
         overflow: hidden;
         width: 768px;
     }
+    /*#00002, 121001, dwildt+*/
 
 
 #content {
@@ -133,6 +207,7 @@ input.ui-button {
 #footer {
   background:#F79210;
   color: #000;
+/*  height:6.4em;*/
   padding:1em 0 .1em 0;
   text-align:center;
   width:1000px;
@@ -143,8 +218,8 @@ input.ui-button {
   background-repeat:repeat-y;
   color: white;
 }
-#slider h1,
-#slider h2,
+#slider h1, 
+#slider h2, 
 #slider h3,
 #slider p {
   padding:0.4em 1em 0 1em;
@@ -164,13 +239,13 @@ h1 {
 h2 {
   font-size:1.4em;
 }
-h1.align-center,
+h1.align-center, 
 h2.align-center,
 h3.align-center,
 p.align-center {
   text-align:center;
 }
-h1.align-right,
+h1.align-right, 
 h2.align-right,
 h3.align-right,
 p.align-right  {
@@ -243,12 +318,12 @@ p.align-right  {
   width:10em;
 }
 
-.searchbox fieldset,
+.searchbox fieldset, 
 .selectboxorderby fieldset {
   border:0;
   padding:0;
 }
-.searchbox fieldset legend,
+.searchbox fieldset legend, 
 .selectboxorderby fieldset legend {
   display:none;
 }
