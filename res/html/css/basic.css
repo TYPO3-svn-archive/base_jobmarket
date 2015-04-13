@@ -220,6 +220,24 @@ button.expand,
   padding: 0;
 }
 
-.row {
-  background-color:#F79210;
-}
+    /*
+     * Clearfix
+     */
+    .clearfix:after { /* Firefox, IE8, Opera, Safari etc. */
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+         visibility: hidden;
+    }
+
+    * +html .clearfix {
+        display: inline-block;
+    }
+
+    * html .clearfix {
+        height: 1%;
+    }
+    html, body {
+        height:auto;
+    }
