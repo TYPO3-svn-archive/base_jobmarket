@@ -235,6 +235,23 @@ button.expand,
   margin: 0;
 }
 
+button, .button {
+  background-color: #f79210;
+}
+button.disabled, button[disabled], .button.disabled, .button[disabled] {
+  background-color: #f79210;
+}
+button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
+  background-color: #f79210;
+}
+ul.pagination li.current a, ul.pagination li.current button {
+  background: #f79210;
+}
+ul.pagination li.current a:hover, ul.pagination li.current a:focus, ul.pagination li.current button:hover, ul.pagination li.current button:focus {
+  background: #f79210;
+}
+
+
 .pricing-table .title {
   padding: 0;
 }

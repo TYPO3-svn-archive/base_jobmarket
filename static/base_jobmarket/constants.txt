@@ -9,18 +9,18 @@
 //PAGE_TARGET = _self
 
 //content {
-//  headerSpace = 0|0 
+//  headerSpace = 0|0
 //  space       = 0|0
 //}
 
   // plugin.base_jobmarket
 plugin.base_jobmarket {
   # cat=Job Market Template - Client*//100;   type=string;   label= Author*: *Obligate! Author of the website
-  client.name = 
+  client.name =
 
   # cat=Job Market Template - Host*//100;   type=string;   label= Host*: *Obligate! Host with an ending slash! Example: http://www.my-host.org/
-  host = 
-  
+  host =
+
   # cat=Job Market Template - Pages*//100;   type=+int;   label= Root page*: *Obligate! Uid of the root page
   pages.root                        = 100000
   # cat=Job Market Template - Pages*//101;   type=+int;   label= Logo*: *Obligate! Uid of the page or directory, which contains the content element with the header logo
@@ -28,36 +28,36 @@ plugin.base_jobmarket {
   # cat=Job Market Template - Pages*//102;   type=+int;   label= Footer*: *Obligate! Uid of the page or directory, which contains the content element with the footer
   pages.root.libraries.footer       = 100000
   # cat=Job Market Template - Pages*//103;   type=+int;   label= Menu Bottom: Uid of the page or directory, which contains the content element for the bottom of the menu column
-  pages.root.libraries.menu.bottom  = 100000 
-  # cat=Job Market Template - Pages*//104;   type=+int;   label= Slider Content*: *Obligate! Uid of the page, which contains the content element for the header slider 
-  pages.root.libraries.header.slider.content  = 100000 
+  pages.root.libraries.menu.bottom  = 100000
+  # cat=Job Market Template - Pages*//104;   type=+int;   label= Slider Content*: *Obligate! Uid of the page, which contains the content element for the header slider
+  pages.root.libraries.header.slider.content  = 100000
 
   # cat=Job Market Template - Paths//100;     type=string;   label= CSS file: Path to the CSS file
   paths.css           = EXT:base_jobmarket/res/html/css/basic.css
-  # cat=Job Market Template - Paths//101;     type=string;   label= Favicon: Path to the favicon
+  # cat=Job Market Template - Paths//102;     type=string;   label= Favicon: Path to the favicon
   paths.favicon       = EXT:base_jobmarket/res/images/favicon.ico
-  # cat=Job Market Template - Paths//102;     type=string;   label= HTML Template: Path to the HTML template file
+  # cat=Job Market Template - Paths//103;     type=string;   label= HTML Template: Path to the HTML template file
   paths.html          = EXT:base_jobmarket/res/html/index.html
-    # cat=Job Market Template - Paths//103;   type=string;   label= Resource directory: Path to the directory with the resources
+    # cat=Job Market Template - Paths//104;   type=string;   label= Resource directory: Path to the directory with the resources
   paths.res           = EXT:base_jobmarket/res/
-    # cat=Job Market Template - Paths//104;   type=string;   label= Slider CSS: Path to the slider css file
+    # cat=Job Market Template - Paths//105;   type=string;   label= Slider CSS: Path to the slider css file
   paths.slider.css    = EXT:base_jobmarket/res/jQuery/fadeSlideShow/fadeSlideShow.css
-    # cat=Job Market Template - Paths//105;   type=string;   label= Slider jQuery: Path to jQuery slider
+    # cat=Job Market Template - Paths//106;   type=string;   label= Slider jQuery: Path to jQuery slider
   paths.slider.jQuery = EXT:base_jobmarket/res/jQuery/fadeSlideShow/fadeSlideShow.js
 
   # cat=Job Market Template - Phrases//100;   type=string;   label= Root page link label*: *Obligate! Label for the Link of the root page in the manu
-  phrases.title_tag_rootpage = 
+  phrases.title_tag_rootpage =
 
   # cat=Job Market Template - SEO//100;   type=string;   label= Description: Search Engine Optimisation: default description
-  seo.description = 
+  seo.description =
   # cat=Job Market Template - SEO//101;   type=string;   label= Keywords: Search Engine Optimisation: default keywords separated by comma
-  seo.keywords    = 
+  seo.keywords    =
 
   # cat=Job Market Template - Slider//100;   type=+int;   label= Columns position: Columns position of your slider plugin. 0: normal, 1: left, 2:right, 3: marginal
   slider.colpos        =
   # cat=Job Market Template - Slider//101;   type=+int;   label= Maximum Image Height: The maximum height of images in the slider
   slider.maxImageHeight = 130
-  # cat=Job Market Template - Slider//102;   type=+int;   label= Maximum Image Width: The maximum width of images in the slider 
+  # cat=Job Market Template - Slider//102;   type=+int;   label= Maximum Image Width: The maximum width of images in the slider
   slider.maxImageWidth = 770
 }
   // plugin.base_jobmarket
