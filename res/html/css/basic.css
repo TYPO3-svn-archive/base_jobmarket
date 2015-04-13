@@ -228,7 +228,9 @@ button.expand,
 #content .row {
   background-color:#FFF;
 }
-
+#content .accordion .row {
+    background: #E8E8E8;
+}
 
 /*
  * Clearfix
