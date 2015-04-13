@@ -33,7 +33,7 @@ body {
 }
 
 #wrap-content {
-  background: -moz-linear-gradient(left, #FFFFFF 75%, #C14E39 75%);
+  background: -moz-linear-gradient(left, #FFFFFF 75%, #F79210 75%);
 }
 /* wraps */
 
@@ -70,6 +70,7 @@ input.ui-button {
   font-size: .8em;
 }
 #menue {
+  background-color: #F79210;
   padding-top:1em;
 }
 
