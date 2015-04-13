@@ -60,9 +60,6 @@ body {
   background-color:#FFF;
   padding-top:1em;
 }
-#content .columns {
-  background-color:#FFF;
-}
 #content ul#record-browser {
   margin: 0;
 }
@@ -228,6 +225,10 @@ button.expand,
 .row {
   background-color:#F79210;
 }
+#content .row {
+  background-color:#FFF;
+}
+
 
 /*
  * Clearfix
