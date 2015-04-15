@@ -58,7 +58,7 @@ plugin.base_jobmarket {
   # cat=Job Market Template - Slider//101;   type=+int;   label= Maximum Image Height: The maximum height of images in the slider
   slider.maxImageHeight = 130
   # cat=Job Market Template - Slider//102;   type=+int;   label= Maximum Image Width: The maximum width of images in the slider
-  slider.maxImageWidth = 770
+  slider.maxImageWidth = 750
 }
   // plugin.base_jobmarket
 
