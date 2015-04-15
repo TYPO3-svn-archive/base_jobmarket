@@ -1,5 +1,5 @@
 #slideshow figure.csc-textpic-image {
-  margin: 0;  
+  margin: 0;
 }
 
 #slideshowWrapper{
@@ -19,7 +19,7 @@
 #fssNext{
   position:absolute;
   top:-8px;
-  left:768px;
+  left:750px;
   background:url(arrows.png) no-repeat;
   width:67px;
   height:143px;
@@ -27,8 +27,8 @@
 }
 #fssPlayPause{
   position:absolute;
-  top:98px;
-  left:702px;
+  top:90px;
+  left:680px;
   background:url(white.png) repeat;
   padding:4px 0 5px 0;
   -moz-border-radius:5px;

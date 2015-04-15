@@ -1,9 +1,11 @@
 XXX
 
 3.0.4
-  15-04-13
+  15-04-15
   Improvement
   * #i0009: Improve CSS in context with Foundation
+            Aming others:
+            * res/jQuery/fadeSlideShow/fadeSlideShow.css
 
 3.0.3
   13-07-23
